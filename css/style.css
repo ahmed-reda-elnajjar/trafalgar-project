@@ -1,0 +1,634 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* font */
+
+@font-face {
+    font-family: Mulish-Light;
+    src: url(../font/Mulish/Mulish-Light.ttf);
+}
+
+@font-face {
+    font-family: Mulish-Regular;
+    src: url(../font/Mulish/Mulish-Regular.ttf);
+}
+
+@font-face {
+    font-family: Mulish-Medium;
+    src: url(../font/Mulish/Mulish-Medium.ttf);
+}
+
+@font-face {
+    font-family: Mulish-Bold;
+    src: url(../font/Mulish/Mulish-Bold.ttf);
+}
+
+                                                  /*           public            */
+html{
+    font-family: Mulish-Light;
+    font-size: 16px;
+}
+
+.container{
+    width: 80%;
+    margin-inline : auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+.button{
+    display: inline-block;
+    padding-block: 16px;
+    width: 200px;
+    border-radius: 55px;
+    font-size: 18px;
+    text-align: center;
+}
+.primary-button{
+     background: #458FF6;
+     color: #FFFFFF;  
+}
+
+
+.seconadry-button{
+    border: 1.5px solid #458FF6;
+    outline: none;
+    background-color: transparent;
+    border-radius: 55px;
+    width: 200px;
+    height: 60px;
+    display: block;
+    font-size: 1.125rem;
+    color: #458FF6;
+    cursor: pointer;
+    font-family: Mulish-Bold;
+    
+}
+.seconadry-button:hover{
+    background-color: #458FF6;
+    color: #fff;
+}
+
+
+
+                                                    /*        nav-bar           */
+
+.navbar-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 3rem;
+}
+
+.navbar-links {
+    list-style-type: none;
+}
+
+.navbar-links  li{
+    display: inline-block;
+    margin-inline-end: 2.5rem;
+    list-style-type: none;
+}
+
+.navbar-links  li:last-child{
+    margin-inline-end: 0;
+}
+
+
+.navbar-links  li a{
+    font-size: 1.125rem;
+    font-family: Mulish-Medium;
+    color: #1F1534;
+    opacity: .5;
+    
+}
+
+.navbar-links  li a.active, .navbar-links  li a:hover{
+    opacity: 1;
+    font-family: Mulish-Bold;
+}
+
+
+                                                    /*           hero            */
+main{
+    background-image: url(../IMAGE/Group.jpg);
+    background-repeat: no-repeat;
+    background-position-x :-50px; ;
+}
+.header {
+    display: table;
+ 
+    
+}
+.header .header-text , .header .image-header{
+    display: table-cell;
+    vertical-align: middle;
+}
+.header .header-text{
+width: 32%;
+
+}
+.header .header-text h1 {
+
+font-size: 44px ;
+margin-bottom: 16px;
+
+}
+
+.header .header-text p {
+    color: #7D7987;
+    margin-bottom: 40px;
+   
+
+}
+
+.header .image-header{
+    width: 70% ;
+    margin-inline-start: auto ;
+}
+ 
+                                                   /*        our services           */
+.services{
+     padding-block: 4rem;
+    position: relative;
+   
+    background-image:url(../IMAGE/Frame1.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center left;
+    
+}
+.services .service-img{
+    position: absolute;
+    top: 54%;
+    transform: translateY(-54%);
+    right: 8%;
+    z-index: -1;
+}
+.services .text-services-header{
+    text-align: center;
+}
+
+.services .text-services-header h3{
+    font-size: 2.25rem;
+    font-family: Mulish-Medium;
+    position: relative;
+}
+.services .text-services-header h3::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -24px;
+    transform: translateX(-50%);
+    width: 65px;
+    height: 2px;
+    background-color: #000000;
+    border-radius: .3125rem;
+}
+.services .text-services-header p{
+
+    margin-top: 3rem;
+    width: 82%;
+    margin-inline: auto;
+    color: #7D7987;
+    font-size: 1.125rem;
+    line-height: 1.875;
+    margin-bottom: 100px;
+}
+.services .services-card-contanier{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+;
+    
+
+   
+}
+.services .services-card-contanier .service-card{
+    padding: 2rem 1.5rem;
+    margin: 0 1rem 2rem;
+    box-shadow: 10px 40px 50px 0px #E5E9F666;
+    border-radius: 1.25rem;
+    background-color: #FFFFFF;
+    width: calc( (100% / 3) - 2 * 1rem - 2 * 1.5rem);
+}
+.services .services-card-contanier .service-card h6 {
+    font-size: 1.5rem;
+    font-family: Mulish-Bold;
+    margin-block: 1rem;
+
+}
+.services .services-card-contanier .service-card p{
+    color: #7D7987;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+.services .service-button{
+    margin: 2rem auto 0;
+}
+                                          /*            healthcare paragraph         */
+
+.paragraph-healthcare  {
+    display: table;
+    margin-block: 3rem;
+    margin-left: 50px;
+}
+.paragraph-healthcare .image-healthcare ,.paragraph-healthcare .text-healthcare {
+display: table-cell;
+vertical-align: middle;
+
+}
+.paragraph-healthcare .image-healthcare{
+    width: 70%;
+    margin-inline: auto;
+
+}
+.paragraph-healthcare .text-healthcare{
+    width:32%;
+    
+
+}
+
+.paragraph-healthcare .text-healthcare h3{
+  
+    font-size: 44px ;
+    margin-bottom: 30px;
+}
+.paragraph-healthcare .text-healthcare h3::after{
+    content: '';
+    position: absolute;
+    left: 60%;
+    bottom: -1200px;
+    transform: translateX(-50%);
+    width: 65px;
+    height: 2px;
+    background-color: #000000;
+    border-radius: .3125rem;
+}
+.paragraph-healthcare .text-healthcare p{
+    color: #7D7987;
+    margin-bottom: 40px;
+    margin-top: 50px;
+
+
+
+}  
+
+                                               /*             mobile app paragraph           */
+
+.mobile {
+    background-image:url(../IMAGE/Group.jpg) ;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position-y:390px; 
+    background-position-x:1450px; 
+}
+ .Pragraph-app  {
+    display: table;
+    margin-block: 8rem;
+    margin-right: 50px;
+}
+.Pragraph-app .app-image ,.Pragraph-app .app-text {
+display: table-cell;
+vertical-align: middle;
+
+}
+.Pragraph-app .app-image{
+    width: 70%;
+    margin-inline: auto;
+
+}
+.Pragraph-app .app-text{
+    width:32%;
+    
+
+}
+
+.Pragraph-app .app-text h3{
+  
+    font-size: 44px ;
+    margin-bottom: 30px;
+}
+.Pragraph-app .app-text h3::after{
+    content: '';
+    position: absolute;
+    left: 19%;
+    bottom: -1730px;
+    transform: translateX(-50%);
+    width: 65px;
+    height: 2px;
+    background-color: #000000;
+    border-radius: .3125rem;
+}
+.Pragraph-app  .app-text p{
+    color: #7D7987;
+    margin-bottom: 40px;
+    margin-top: 50px;
+
+}        
+
+                                                       /*                border               */
+.border{
+
+border-radius: 30px ;
+background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+margin-block: 5rem;
+width: 1100px;
+height: 385px;
+
+}
+.border .service-img{
+    position: absolute;
+    top: 3170px;
+    transform: translateY(-73%);
+    left: 10%;
+    z-index: -1;
+    
+}
+.border .service-image{
+    position: absolute;
+    top: 2840px;
+    opacity: 36%;
+    right: 11%;
+    
+    
+}
+
+ 
+.border .border-table {
+    display: table;
+}
+.border .border-table .id ,.border .border-table p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.border h3{
+    text-align: center;
+    padding-block: 50px;
+    color: #FFFFFF;
+    font-size: 30px ;
+    
+
+}
+.border h3::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2190px;
+    transform: translateX(-50%);
+    width: 65px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: .3125rem;
+}
+.border .border-table .id {
+    display: table-cell;
+    width: 50%;
+    padding-left: 100px;
+
+   
+
+}
+.border .border-table .id img {
+   
+    border-radius:4rem ;
+    
+   
+}
+.border .border-table .id span{
+    font-size: 19px ;
+    position: absolute;
+    top: 3080px;
+    color:rgba(255, 255, 255, 0.9);
+    font-family: Mulish-Regular;
+    padding-left: 28px;
+   
+    
+    
+
+}
+.border .border-table .id h2{
+    position:absolute;
+    top: 3040px;
+    color: #FFFFFF;
+    font-size: 23px ;
+    margin-left: 160px;
+    
+  
+
+}
+.border .border-table p{
+
+    color:rgba(255, 255, 255, 0.9);
+    font-size: 19px ;
+    padding-right: 100px;
+    padding-left: 50px;
+    padding-block: 30px;
+}
+
+
+                                              /*           last section            */
+ .end {
+    background-image:url(../IMAGE/elemen2t.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-position-y:-85px;
+ }     
+ 
+.end  .last-section{
+    background-image:url(../IMAGE/Group.jpg) ;
+    background-repeat: no-repeat;
+    background-position:  left;
+    background-position-y:10%;
+    background-position-x:1%;
+}
+
+.last-section h4 {
+    text-align: center;
+    font-family: Mulish-Bold;
+    font-size: 36px;
+
+}      
+.last-section h4::after{
+
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2610px;
+    transform: translateX(-50%);
+    width: 55px;
+    height: 2px;
+    background-color: #000000;
+    border-radius: .3125rem;
+}
+
+
+.last-section .row-table {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    margin-left: 50px;
+
+}                                   
+.last-section .row-table .card-services {
+    margin: 0 1rem 2rem;
+    box-shadow: 10px 40px 50px 0px #E5E9F666;
+    border-radius: 1.25rem;
+    background-color: #FFFFFF  ;
+    width: calc( (100% / 3) - 1 * 1rem - 2 * 1rem);
+    height:512px;
+}
+.last-section .row-table .card-services img{
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    width: auto;
+}
+
+.last-section .row-table .card-services h3{
+    font-size: 20px;
+    font-family: Mulish-Bold;
+    margin-block: 1rem;
+    margin-inline:2rem ;
+    
+}
+
+.last-section .row-table .card-services p{
+    color: #7D7987;
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-inline:2rem ;
+}
+.third-button{
+    border-style: none;
+    background-color: transparent;
+    height: 60px;
+    font-size: 1.125rem;
+    color: #458FF6;
+    font-family: Mulish-Bold;
+    margin-inline:2rem ;
+}
+
+.last-section .service-button{
+    margin: 2rem auto 0;
+}  
+
+
+                                                   /*           lastlist              */
+
+.lastlist .service-img{
+    position: absolute;
+    top:4210px;
+    transform: translateY(-54%);
+    right: 8%;
+    z-index: -1;
+}                                     
+.lastlist{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    height: 335px;
+    margin-top: 10rem;
+    padding-inline: 3rem;
+    
+
+
+}
+
+.lastlist .list{
+    padding-top: 5rem;
+    margin: 0 1rem 2rem;
+    padding-left: 4rem;
+   
+}
+.lastlist .text {
+    width: 23%;
+ 
+ }
+
+ .lastlist .text a{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: Mulish-Bold;
+    text-align: center;
+ }
+ .lastlist .text .footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+padding-right: 40%;
+ }
+ .lastlist .text .footer-logo  .icon {
+
+    background-color: #FFFFFF;
+    width: 41px;
+    height: 41px;
+    border-radius: 100%;
+   
+   
+    color: #458FF6;
+    font-size: 27px;
+    
+}
+.lastlist .text p{
+    color: #FFFFFF;
+    font-size: 15px;
+    line-height: 1.75;
+    
+    padding-block: 1rem;
+
+}
+
+.lastlist .text .row{
+    font-size: 14px ;
+    position: absolute;
+    top:   4460px ;
+    color:rgba(255, 255, 255, 0.9);
+    font-family: Mulish-Regular;
+   
+    
+
+}
+
+
+
+.lastlist .list li{
+    list-style: none;
+    margin-block: 1rem;
+    margin-inline:2rem ;
+    
+
+}
+
+.lastlist .list h3{
+    font-size: 20px;
+    font-family: Mulish-Bold;
+    margin-block: 1rem;
+    margin-inline:2rem ;
+    color: #fff;
+}
+.lastlist .list ul li a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+  
+    
+}
+.lastlist .service-image{
+    position: absolute;
+    left: 0%;
+    top: 4420px;
+    transform: translate(-15%,4%);
+
+}
+
+
